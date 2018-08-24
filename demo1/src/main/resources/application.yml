@@ -6,7 +6,6 @@ spring:
     password:
     schema: classpath:db/schema.sql
     #data: classpath:db/data.sql
-
   h2:
     console:
       settings:
@@ -15,4 +14,4 @@ spring:
       enabled: true
 
 mybatis:
-  mapper-locations:classpath*:mapper/*.xml
+  mapper-locations: classpath*:mapper/*.xml
