@@ -1,7 +1,8 @@
 spring:
   datasource:
-    url: jdbc:h2:~/testdb
-    driver-class-name: org.h2.Driver
+    url: jdbc:p6spy:h2:~/testdb
+    #driver-class-name: org.h2.Driver
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     username: sa
     password:
     schema: classpath:db/schema.sql
